@@ -1,0 +1,27 @@
+[user]
+  email = 13930952+thiagomajesk@users.noreply.github.com
+  name = thiagomajesk
+
+[safe]
+  directory = *
+
+[push]
+  default = simple
+  followTags = true
+
+[status]
+  showUntrackedFiles = all
+
+[alias]
+  b = branch
+  f = fetch
+  s = status
+  c = commit
+  co = checkout
+  lo = log --pretty=format:\"%C(brightBlack) ╭─ %C(auto)%h %C(italic cyan)(%ar)%C(reset) %C(245)%m %cN%C(auto)%d%C(reset)%n %C(brightBlack)╰─%C(brightBlack) %s\"
+
+[rerere]
+  enabled = true
+	
+[column]
+  ui = auto,column
