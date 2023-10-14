@@ -1,3 +1,8 @@
+# Includes system specific configurations that can't be ported to all plataforms.
+# This means you can have different configs for *NIX systems and Windows without conflicts.
+[include]
+  path = ~/.config/git/system.inc
+
 [user]
   email = 13930952+thiagomajesk@users.noreply.github.com
   name = thiagomajesk
@@ -25,3 +30,21 @@
 	
 [column]
   ui = auto,column
+
+[color]
+  ui = true
+
+[color "diff-highlight"]
+  oldNormal = red bold
+  oldHighlight = red bold 52
+  newNormal = green bold
+  newHighlight = green bold 22
+
+[color "diff"]
+  meta = 11
+  frag = magenta bold
+  func = 146 bold
+  commit = yellow bold
+  old = red bold
+  new = green bold
+  whitespace = red reverse
