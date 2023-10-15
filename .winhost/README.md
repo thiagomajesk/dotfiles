@@ -61,10 +61,22 @@ After the distribution is installed, WSL will prompt you for a user and password
 
 ### Step 2: Bootstrapping
 
-Now we are going to install all the software we need. Open a PowerShell terminal and run the bootstrap script (no need to run as admin):
+Now we are going to install all the software we need you can run the bootstrap script to have your environment setup in two ways:
+
+**Locally:** Download the repository and run the bootstrap script from PowerShell (no need to run as admin):
 
 ```powershell
 ./bootstrap.ps1
 ```
 
-> ⚠️ **Attention**: Depending on your Windows version, you might have OneDrive pre-configured to sync some of your files. This means that the path to those folders that are usually inside the home directoy won't be there. One of the things the bootstrap script will try do to is symlinking those OneDrive folders back to your home directory. You can manually remove this step from the script if you don't need it.
+**Remotelly:** You can run the bootstrap script without having to download the repository manually using the following command:
+
+```powershell
+irm https://raw.githubusercontent.com/thiagomajesk/dotfiles/master/.winhost/eval.ps1 | iex
+```
+
+> ⚠️ **Attention**: You should not try to run any of those commands using an elevated terminal session (aka: as an admin user), otherwise you may have all sorts of permissions problems while trying to install or configure scoop packages (in fact, scoop doesn't require admin priveleges at all).
+
+### One Drive Synching
+
+Depending on your Windows version, you might have OneDrive pre-configured to sync some of your files. This means that the path to those folders that are usually inside the home directoy won't be there. One of the things the bootstrap script will try do to is symlinking those OneDrive folders back to your home directory. You can manually remove this step from the script if you don't need it.
