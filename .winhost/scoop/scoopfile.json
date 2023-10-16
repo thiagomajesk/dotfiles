@@ -1,225 +1,232 @@
 {
   "apps": [
       {
+          "Info": "",
+          "Source": "main",
           "Updated": "2023-10-07T18:00:25.0464801-03:00",
-          "Info": "",
-          "Source": "main",
-          "Name": "7zip",
-          "Version": "23.01"
+          "Version": "23.01",
+          "Name": "7zip"
       },
       {
-          "Updated": "2023-10-07T20:38:13.3969459-03:00",
           "Info": "",
           "Source": "main",
-          "Name": "bat",
-          "Version": "0.23.0"
+          "Updated": "2023-10-12T23:38:12.2697248-03:00",
+          "Version": "0.24.0",
+          "Name": "bat"
       },
       {
+          "Info": "",
+          "Source": "main",
           "Updated": "2023-10-07T18:20:55.3794206-03:00",
-          "Info": "",
-          "Source": "main",
-          "Name": "dark",
-          "Version": "3.11.2"
+          "Version": "3.11.2",
+          "Name": "dark"
       },
       {
+          "Info": "",
+          "Source": "extras",
           "Updated": "2023-10-07T18:11:52.4992429-03:00",
-          "Info": "",
-          "Source": "extras",
-          "Name": "discord",
-          "Version": "1.0.9010-15"
+          "Version": "1.0.9010-15",
+          "Name": "discord"
       },
       {
+          "Info": "",
+          "Source": "nerd-fonts",
           "Updated": "2023-10-10T23:34:32.5966257-03:00",
-          "Info": "",
-          "Source": "nerd-fonts",
-          "Name": "FantasqueSansMono-NF",
-          "Version": "3.0.2"
+          "Version": "3.0.2",
+          "Name": "FantasqueSansMono-NF"
       },
       {
+          "Info": "",
+          "Source": "nerd-fonts",
           "Updated": "2023-10-10T23:34:54.5561695-03:00",
-          "Info": "",
-          "Source": "nerd-fonts",
-          "Name": "FantasqueSansMono-NF-Mono",
-          "Version": "3.0.2"
+          "Version": "3.0.2",
+          "Name": "FantasqueSansMono-NF-Mono"
       },
       {
+          "Info": "",
+          "Source": "main",
           "Updated": "2023-10-07T20:31:52.7462293-03:00",
-          "Info": "",
-          "Source": "main",
-          "Name": "fzf",
-          "Version": "0.42.0"
+          "Version": "0.42.0",
+          "Name": "fzf"
       },
       {
+          "Info": "",
+          "Source": "main",
           "Updated": "2023-10-07T18:00:33.4217348-03:00",
-          "Info": "",
-          "Source": "main",
-          "Name": "git",
-          "Version": "2.42.0.2"
+          "Version": "2.42.0.2",
+          "Name": "git"
       },
       {
+          "Info": "",
+          "Source": "extras",
           "Updated": "2023-10-07T18:11:15.8072681-03:00",
-          "Info": "",
-          "Source": "extras",
-          "Name": "googlechrome",
-          "Version": "117.0.5938.150"
+          "Version": "117.0.5938.150",
+          "Name": "googlechrome"
       },
       {
+          "Info": "",
+          "Source": "main",
           "Updated": "2023-10-07T18:22:51.0654742-03:00",
-          "Info": "",
-          "Source": "main",
-          "Name": "innounp",
-          "Version": "0.50"
+          "Version": "0.50",
+          "Name": "innounp"
       },
       {
+          "Info": "",
+          "Source": "nerd-fonts",
           "Updated": "2023-10-07T18:39:11.3521097-03:00",
-          "Info": "",
-          "Source": "nerd-fonts",
-          "Name": "JetBrainsMono-NF",
-          "Version": "3.0.2"
+          "Version": "3.0.2",
+          "Name": "JetBrainsMono-NF"
       },
       {
+          "Info": "",
+          "Source": "nerd-fonts",
           "Updated": "2023-10-07T18:39:40.8177392-03:00",
-          "Info": "",
-          "Source": "nerd-fonts",
-          "Name": "JetBrainsMono-NF-Mono",
-          "Version": "3.0.2"
+          "Version": "3.0.2",
+          "Name": "JetBrainsMono-NF-Mono"
       },
       {
+          "Info": "",
+          "Source": "extras",
           "Updated": "2023-10-07T18:16:43.6708456-03:00",
-          "Info": "",
-          "Source": "extras",
-          "Name": "notepadplusplus",
-          "Version": "8.5.7"
+          "Version": "8.5.7",
+          "Name": "notepadplusplus"
       },
       {
-          "Updated": "2023-10-07T19:05:02.7592888-03:00",
           "Info": "",
           "Source": "main",
-          "Name": "oh-my-posh",
-          "Version": "18.11.0"
+          "Updated": "2023-10-12T23:38:18.3822774-03:00",
+          "Version": "18.12.0",
+          "Name": "oh-my-posh"
       },
       {
+          "Info": "",
+          "Source": "main",
           "Updated": "2023-10-08T18:02:37.5747119-03:00",
-          "Info": "",
-          "Source": "main",
-          "Name": "plex-server",
-          "Version": "1.32.6.7557-1cf77d501"
+          "Version": "1.32.6.7557-1cf77d501",
+          "Name": "plex-server"
       },
       {
+          "Info": "",
+          "Source": "extras",
           "Updated": "2023-10-07T18:21:20.8014553-03:00",
-          "Info": "",
-          "Source": "extras",
-          "Name": "powertoys",
-          "Version": "0.74.1"
+          "Version": "0.74.1",
+          "Name": "powertoys"
       },
       {
+          "Info": "",
+          "Source": "extras",
           "Updated": "2023-10-07T19:38:07.2270066-03:00",
-          "Info": "",
-          "Source": "extras",
-          "Name": "psreadline",
-          "Version": "2.3.4"
+          "Version": "2.3.4",
+          "Name": "psreadline"
       },
       {
-          "Updated": "2023-10-07T20:02:03.588061-03:00",
           "Info": "",
           "Source": "main",
-          "Name": "pwsh",
-          "Version": "7.3.7"
+          "Updated": "2023-10-12T23:53:20.6086755-03:00",
+          "Version": "7.3.8",
+          "Name": "pwsh"
       },
       {
+          "Info": "",
+          "Source": "extras",
           "Updated": "2023-10-07T18:10:58.7066228-03:00",
-          "Info": "",
-          "Source": "extras",
-          "Name": "qbittorrent",
-          "Version": "4.5.5"
+          "Version": "4.5.5",
+          "Name": "qbittorrent"
       },
       {
+          "Info": "",
+          "Source": "extras",
           "Updated": "2023-10-09T12:09:24.9905204-03:00",
-          "Info": "",
-          "Source": "extras",
-          "Name": "slack",
-          "Version": "4.34.121"
+          "Version": "4.34.121",
+          "Name": "slack"
       },
       {
-          "Updated": "2023-10-07T18:19:47.2735405-03:00",
           "Info": "",
           "Source": "extras",
-          "Name": "spotify",
-          "Version": "1.2.21.1104.g42cf0a50"
+          "Updated": "2023-10-12T23:38:32.2575877-03:00",
+          "Version": "1.2.22.982.g794acc0a",
+          "Name": "spotify"
       },
       {
-          "Updated": "2023-10-07T18:12:54.2040424-03:00",
           "Info": "",
           "Source": "versions",
-          "Name": "steam",
-          "Version": "nightly-20231007"
+          "Updated": "2023-10-07T18:12:54.2040424-03:00",
+          "Version": "nightly-20231007",
+          "Name": "steam"
       },
       {
+          "Info": "",
+          "Source": "extras",
           "Updated": "2023-10-07T18:23:16.8543359-03:00",
-          "Info": "",
-          "Source": "extras",
-          "Name": "tableplus",
-          "Version": "5.4.5.240"
+          "Version": "5.4.5.240",
+          "Name": "tableplus"
       },
       {
+          "Info": "",
+          "Source": "extras",
           "Updated": "2023-10-07T19:30:42.5485272-03:00",
-          "Info": "",
-          "Source": "extras",
-          "Name": "terminal-icons",
-          "Version": "0.11.0"
+          "Version": "0.11.0",
+          "Name": "terminal-icons"
       },
       {
+          "Info": "",
+          "Source": "extras",
           "Updated": "2023-10-08T17:57:18.9834181-03:00",
-          "Info": "",
-          "Source": "extras",
-          "Name": "vcredist2022",
-          "Version": "14.36.32532.0"
+          "Version": "14.36.32532.0",
+          "Name": "vcredist2022"
       },
       {
+          "Info": "",
+          "Source": "extras",
           "Updated": "2023-10-07T18:18:57.8384355-03:00",
-          "Info": "",
-          "Source": "extras",
-          "Name": "vlc",
-          "Version": "3.0.18"
+          "Version": "3.0.18",
+          "Name": "vlc"
       },
       {
+          "Info": "",
+          "Source": "extras",
           "Updated": "2023-10-07T18:26:41.6778742-03:00",
-          "Info": "",
-          "Source": "extras",
-          "Name": "vscode",
-          "Version": "1.83.0"
+          "Version": "1.83.0",
+          "Name": "vscode"
       },
       {
-          "Updated": "2023-10-07T19:59:30.6665351-03:00",
           "Info": "",
           "Source": "main",
-          "Name": "zoxide",
-          "Version": "0.9.2"
+          "Updated": "2023-10-15T18:31:51.0322582-03:00",
+          "Version": "0.1.1",
+          "Name": "win32yank"
+      },
+      {
+          "Info": "",
+          "Source": "main",
+          "Updated": "2023-10-07T19:59:30.6665351-03:00",
+          "Version": "0.9.2",
+          "Name": "zoxide"
       }
   ],
   "buckets": [
       {
           "Name": "extras",
           "Source": "https://github.com/ScoopInstaller/Extras",
-          "Updated": "2023-10-10T21:32:38-03:00",
+          "Updated": "2023-10-15T17:23:50-03:00",
           "Manifests": 1889
       },
       {
           "Name": "main",
           "Source": "https://github.com/ScoopInstaller/Main",
-          "Updated": "2023-10-10T21:33:02-03:00",
-          "Manifests": 1257
+          "Updated": "2023-10-15T17:23:51-03:00",
+          "Manifests": 1258
       },
       {
           "Name": "nerd-fonts",
           "Source": "https://github.com/matthewjberger/scoop-nerd-fonts",
-          "Updated": "2023-10-07T12:17:17-03:00",
+          "Updated": "2023-10-14T16:13:51-03:00",
           "Manifests": 296
       },
       {
           "Name": "versions",
           "Source": "https://github.com/ScoopInstaller/Versions",
-          "Updated": "2023-10-10T22:30:26-03:00",
+          "Updated": "2023-10-15T17:27:23-03:00",
           "Manifests": 430
       }
   ]
