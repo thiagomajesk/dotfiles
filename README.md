@@ -10,7 +10,7 @@ If you are using Windows as a host and want to configure a developement environm
 
 ### Linux or MacOs Host
 
-🚨 Folow this steps only if you are using a Linux system as a host.
+> 🚨 Folow this steps only if you are using a Linux system as a host.
 
 1. Install yadm with `sudo apt install yadm -y`
 2. Clone the repository `yadm clone --bootstrap git@github.com:thiagomajesk/dotfiles.git`
@@ -27,3 +27,12 @@ The dotfiles are managed using YADM for files inside WSL and a series of templat
 - `yadm commit` to commit changes to the repository
 - `yadm push` to push changes to the repository
 - `yadm pull` pull the latest changes from the repository
+
+## Tooling
+
+### Helix and [Neo]Vim
+
+#### Clipboard sharing
+
+To enable clipboard sharing on Windows while using WSL, you must install a package called `win32yank`.  
+This package should be included by default in the `scoopfile.json`, but you can install it manually by running `scoop install win32yank`.
