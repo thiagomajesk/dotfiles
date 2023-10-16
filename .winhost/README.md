@@ -25,7 +25,7 @@ The script is fairly simple and you can follow even with a superficial understan
 
 ## Usage
 
-### Debloating (optional)
+### Step 0: Debloating (optional)
 
 After a clean Windows instalation, run the following command as admin to launch the debloating tool: 
 
