@@ -12,6 +12,7 @@ If you are using Windows as a host and want to configure a developement environm
 
 > 🚨 Folow this steps only if you are using a Linux system as a host (or if you want to setup just the Linux env).
 
+0. Make sure to run `sudo apt update & upgrade`
 1. Install yadm with `sudo apt install yadm -y`
 2. Clone the repository `yadm clone --bootstrap git@github.com:thiagomajesk/dotfiles.git`
 
