@@ -1,19 +1,22 @@
 #!/bin/bash
 
+# Install homebrew dependencies
+sudo apt-get install build-essential
+
 # Install homebrew if it's missing
 if ! command -v brew >/dev/null 2>&1; then
   echo "Homebrew not found on the system, installing"
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-  
-  # We only want to eval Homebrew so the command is available
-  # When the system is running, we will actually eval it from ~/.config/fish.config
-  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 fi
+
+# In this case, we only want to eval Homebrew so the command is available
+# When the system is running, we will actually eval it from ~/.config/fish.config
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # Install packages if we have a Brewfile
 if [ -f "$HOME/Brewfile" ]; then
     echo "Installing packages from Brewfile"
-    brew bundle --global
+    brew install gcc & brew bundle install --file $HOME/Brewfile
 fi
 
 # Add fish to the know shells so we can make it the default one
