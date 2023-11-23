@@ -10,7 +10,7 @@ If you are using Windows as a host and want to configure a developement environm
 
 ### Linux or MacOs Host
 
-> 🚨 Folow this steps only if you are using a Linux system as a host.
+> 🚨 Folow this steps only if you are using a Linux system as a host (or if you want to setup just the Linux env).
 
 1. Install yadm with `sudo apt install yadm -y`
 2. Clone the repository `yadm clone --bootstrap git@github.com:thiagomajesk/dotfiles.git`
