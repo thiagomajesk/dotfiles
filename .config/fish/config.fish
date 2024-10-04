@@ -14,6 +14,10 @@ oh-my-posh init fish --config (brew --prefix oh-my-posh)/themes/spaceship.omp.js
 # Source Zoxide
 zoxide init fish | source
 
+# Necessary for ASDF Postgres to link icu properly when using Homebrew
+set -x LD_LIBRARY_PATH (brew --prefix icu4c)/lib $LD_LIBRARY_PATH
+set -x LIBRARY_PATH (brew --prefix icu4c)/lib $LIBRARY_PATH
+
 #############################################################################
 #                                ALIASES                                    #
 #############################################################################
