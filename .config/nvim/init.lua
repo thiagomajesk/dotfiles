@@ -37,7 +37,15 @@ require('mini.icons').setup()
 require('mini.comment').setup()
 require('mini.indentscope').setup()
 
-require('which-key').setup({ icons = { mappings = false } })
+require('which-key').setup({ 
+  icons = { mappings = false }, 
+  preset = 'modern',
+  win = { 
+    title = false,
+    border = 'single', 
+  } 
+})
+
 require('lualine').setup()
 require('catppuccin').setup({ transparent_background = true })
 
