@@ -36,3 +36,6 @@ alias gtop='btm'
 
 # Bat (Cat replacement)
 alias cat='bat --theme=base16'
+
+# Nasty hack for VSCode (not working by default for some reason)
+function code; set p (which code); $p $argv; end
