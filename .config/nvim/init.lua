@@ -58,7 +58,9 @@ require('mini.diff').setup({
 })
 
 -- Mini Files
-require('mini.files').setup()
+require('mini.files').setup({
+  options = { use_as_default_explorer = false }
+})
 
 -- Lualine
 require('lualine').setup({
@@ -138,6 +140,11 @@ vim.g.maplocalleader = ' '
 vim.g.have_nerd_font = true
 
 vim.opt.termguicolors = true
+
+-- Disable netrw so it doesn't open by default
+-- Also prevents mini.files from opening on directories
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
 
 -- Transparency effects
 -- vim.opt.winblend = 10
