@@ -1,34 +1,46 @@
 local M = {}
 
+local function push(table1, table2)
+    if #table2 == 0 then
+        table.insert(table1, table2)
+    else
+        for _, item in ipairs(table2) do
+            table.insert(table1, item)
+        end
+    end
+end
+
 local function extract_configs(files)
-    local configs = {}
+    local extracted = {}
 
     for _, file in ipairs(files) do
         -- Extract the plugin name from the file path
         -- (eg: "lua/plugins/foo.lua" -> "plugins.foo")
         local name = file:match(".*/lua/(.*)%.lua$"):gsub("/", ".")
 
-        local config = require(name) or {}
+        local config_or_configs = require(name)
 
-        assert(type(config) == 'table',
-            string.format("Plugin '%s' must return a table, got '%s'", name, type(config)))
-
-        assert(type(config.src) == "string",
-            string.format("Plugin should have a string 'src' field, got %s", type(config.src)))
-
-        assert(type(config.name) == "string",
-            string.format("Plugin should have a string 'name' field, got %s", type(config.name)))
-
-        table.insert(configs, config)
+        -- If multiple configs are returned flattens the
+        -- table to preserve order plugins will be required
+        push(extracted, config_or_configs)
     end
 
-    return configs
+    return extracted
 end
 
 local function setup_plugins(configs)
     local specs = {}
 
     for _, config in ipairs(configs) do
+        assert(type(config) == 'table',
+            string.format("'%s' should return a table, got %s", name, type(config)))
+
+        assert(type(config.src) == "string",
+            string.format("'%s' should have a string 'src' field, got %s", name, type(config.src)))
+
+        assert(type(config.name) == "string",
+            string.format("'%s' should have a string 'name' field, got %s", name, type(config.name)))
+
         table.insert(specs, { src = config.src, name = config.name })
     end
 
@@ -40,6 +52,10 @@ local function setup_plugins(configs)
 
             if type(config.setup) == 'table' then
                 module.setup(config.setup)
+            end
+
+            if type(config.after) == 'function' then
+                config.after()
             end
         end
     end
