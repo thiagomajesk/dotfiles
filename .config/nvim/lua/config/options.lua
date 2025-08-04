@@ -70,3 +70,16 @@ vim.opt.scrolloff = 10
 -- Raise a dialog asking if the current file(s) should be saved when
 -- performing an operation that would fail due to unsaved changes in the buffer
 vim.opt.confirm = true
+
+--
+-- Indentation settings
+--
+vim.opt.expandtab = true      -- Use spaces instead of tabs
+vim.opt.tabstop = 2           -- Display tabs as 2 spaces
+vim.opt.shiftwidth = 2        -- Use 2 spaces for indentation
+vim.opt.softtabstop = 2       -- Make backspace treat 2 spaces as a tab
+vim.opt.autoindent = true     -- Copy indent from current line
+vim.opt.smartindent = true    -- Smart indentation for programming
+vim.opt.smarttab = true       -- Smart tab behavior
+vim.opt.shiftround = true     -- Round indent to multiple of shiftwidth
+vim.opt.breakindent = true    -- Maintain indent when wrapping lines
