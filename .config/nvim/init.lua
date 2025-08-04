@@ -13,8 +13,6 @@ vim.lsp.config('elixirls', { cmd = { elixirls_path } })
 
 vim.lsp.enable('elixirls')
 
--- vim.cmd.colorscheme 'kanagawa'
-
 -- Create a command to cleanup inactive plugins
 vim.api.nvim_create_user_command("LoaderCleanup", function()
     require("loader").cleanup()
