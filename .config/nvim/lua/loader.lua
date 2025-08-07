@@ -54,8 +54,10 @@ local function setup_plugins(configs)
                 config.setup()
             elseif type(config.setup) == 'table' then
                 module.setup(config.setup)
+            elseif type(config.setup) ~= 'false' then
+                module.setup()
             end
-        end
+          end
     end
 end
 
