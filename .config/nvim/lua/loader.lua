@@ -50,12 +50,10 @@ local function setup_plugins(configs)
         if config.require ~= false then
             local module = require(config.name)
 
-            if type(config.setup) == 'table' then
+            if type(config.setup) == 'function' then
+                config.setup()
+            elseif type(config.setup) == 'table' then
                 module.setup(config.setup)
-            end
-
-            if type(config.after) == 'function' then
-                config.after()
             end
         end
     end
