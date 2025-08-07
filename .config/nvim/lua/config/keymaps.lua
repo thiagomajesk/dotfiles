@@ -69,3 +69,6 @@ end, { desc = 'Copy directory path' })
 vim.keymap.set('n', '<leader>bf', function()
     vim.fn.setreg('+', vim.fn.expand('%:t:r'))
 end, { desc = 'Copy file name' })
+
+-- Format the current buffer
+vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
