@@ -1,0 +1,6 @@
+-- return {
+--   name = 'coc.nvim',
+--   src = 'https://github.com/neoclide/coc.nvim',
+--   version = 'release',
+--   setup = false
+-- }

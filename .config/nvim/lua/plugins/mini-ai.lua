@@ -1,0 +1,4 @@
+-- return {
+--     name = 'mini.ai',
+--     src = 'https://github.com/nvim-mini/mini.ai'
+-- }
