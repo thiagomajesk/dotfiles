@@ -39,3 +39,10 @@ alias cat='bat --theme=base16'
 
 # Nasty hack for VSCode (not working by default for some reason)
 function code; set p (which code); $p $argv; end
+
+# Custom function to amend commits without changing dates
+function git-safe-amend
+  set orig_author_date (git show -s --format=%aI HEAD)
+  set orig_committer_date (git show -s --format=%cI HEAD)
+  env GIT_COMMITTER_DATE="$orig_committer_date" git commit --amend --no-edit --date "$orig_author_date"
+end
